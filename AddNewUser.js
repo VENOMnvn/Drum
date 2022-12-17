@@ -5,6 +5,7 @@ async function AddNewUser(obj)
 {
    const collection =  await getDataUser();
    const response = await collection.insertOne(obj);
+   const naveen = "Naveen";
    
    return response.acknowledged;
 }
